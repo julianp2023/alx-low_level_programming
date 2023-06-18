@@ -12,6 +12,7 @@ gcc -S -masm=intel "$c_file" -o "$output_file" > /dev/null 2>&1
 # Check if the compilation was successful
 if [ $? -eq 0 ]; then
   echo "Assembly code generated successfully. Output file: $output_file"
+  cat "$output_file"
 else
   echo "Error generating assembly code."
 fi
