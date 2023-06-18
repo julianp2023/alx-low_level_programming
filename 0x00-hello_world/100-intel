@@ -1,2 +1,11 @@
 #!/bin/bash
-gcc -s -main=intel $CFILE
+
+# Set the C file name
+CFILE="100-main.c"
+
+# Generate the assembly code
+gcc -S -masm=intel "$CFILE" -o "$CFILE.s"
+
+# Display the assembly code
+cat "$CFILE.s"
+
