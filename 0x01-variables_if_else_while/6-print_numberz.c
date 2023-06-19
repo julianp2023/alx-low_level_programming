@@ -1,3 +1,5 @@
+#include <unistd.h>
+
 /**
  * main - Entry point of the program
  *
@@ -6,13 +8,7 @@
  */
 int main(void)
 {
-	int i;
-
-	for (i = 0; i < 10; i++)
-	{
-		putchar(i + '0');
-	}
-	putchar('\n');
+	write(1, "0123456789\n", 11);
 
 	return (0);
 }
