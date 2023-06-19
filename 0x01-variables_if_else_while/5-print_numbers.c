@@ -1,13 +1,23 @@
 #include <stdio.h>
 
-int main() {
-    int i;
+/**
+ * main - Entry point
+ *
+ * Description: Prints all single-digit numbers of base 10.
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	int i;
 
-    for (i = 0; i <= 9; i++) {
-        printf("%d", i);
-    }
-    
-    printf("\n");
+	for (i = 0; i <= 9; i++)
+	{
+		printf("%d", i);
+	}
 
-    return 0;
+	printf("\n");
+
+	return (0);
 }
+
