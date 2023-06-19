@@ -8,33 +8,35 @@
  */
 int main(void)
 {
-	int digit1, digit2, digit3, digit4;
+    int d1, d2, d3, d4;
 
-	for (digit1 = 0; digit1 <= 9; digit1++)
-	{
-		for (digit2 = digit1 + 1; digit2 <= 9; digit2++)
-		{
-			for (digit3 = digit2 + 1; digit3 <= 9; digit3++)
-			{
-				for (digit4 = digit3 + 1; digit4 <= 9; digit4++)
-				{
-					putchar(digit1 + '0');
-					putchar(digit2 + '0');
-					putchar(digit3 + '0');
-					putchar(digit4 + '0');
+    for (d1 = 0; d1 <= 9; d1++)
+    {
+        for (d2 = d1 + 1; d2 <= 9; d2++)
+        {
+            for (d3 = d2 + 1; d3 <= 9; d3++)
+            {
+                for (d4 = d3 + 1; d4 <= 9; d4++)
+                {
+                    putchar(d1 + '0');
+                    putchar(d2 + '0');
+                    putchar(',');
+                    putchar(' ');
+                    putchar(d3 + '0');
+                    putchar(d4 + '0');
 
-					if (digit1 != 6 || digit2 != 7 || digit3 != 8 || digit4 != 9)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
-			}
-		}
-	}
+                    if (!(d1 == 9 && d2 == 8 && d3 == 7 && d4 == 6))
+                    {
+                        putchar(',');
+                        putchar(' ');
+                    }
+                }
+            }
+        }
+    }
 
-	putchar('\n');
+    putchar('\n');
 
-	return (0);
+    return (0);
 }
 
