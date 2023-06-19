@@ -8,150 +8,25 @@
  */
 int main(void)
 {
-	putchar('0');
-	putchar('1');
-	write(1, ", ", 2);
+	int firstDigit;
+	int secondDigit;
 
-	putchar('0');
-	putchar('2');
-	write(1, ", ", 2);
+	for (firstDigit = 0; firstDigit <= 9; firstDigit++)
+	{
+		for (secondDigit = firstDigit + 1; secondDigit <= 9; secondDigit++)
+		{
+			putchar(firstDigit + '0');
+			putchar(secondDigit + '0');
 
-	putchar('0');
-	putchar('3');
-	write(1, ", ", 2);
+			if (firstDigit != 8 || secondDigit != 9)
+			{
+				write(1, ", ", 2);
+			}
+		}
+	}
 
-	putchar('0');
-	putchar('4');
-	write(1, ", ", 2);
+	putchar('\n');
 
-	putchar('0');
-	putchar('5');
-	write(1, ", ", 2);
-
-	putchar('0');
-	putchar('6');
-	write(1, ", ", 2);
-
-	putchar('0');
-	putchar('7');
-	write(1, ", ", 2);
-
-	putchar('0');
-	putchar('8');
-	write(1, ", ", 2);
-
-	putchar('0');
-	putchar('9');
-	write(1, ", ", 2);
-
-	putchar('1');
-	putchar('2');
-	write(1, ", ", 2);
-
-	putchar('1');
-	putchar('3');
-	write(1, ", ", 2);
-
-	putchar('1');
-	putchar('4');
-	write(1, ", ", 2);
-
-	putchar('1');
-	putchar('5');
-	write(1, ", ", 2);
-
-	putchar('1');
-	putchar('6');
-	write(1, ", ", 2);
-
-	putchar('1');
-	putchar('7');
-	write(1, ", ", 2);
-
-	putchar('1');
-	putchar('8');
-	write(1, ", ", 2);
-
-	putchar('1');
-	putchar('9');
-	write(1, ", ", 2);
-
-	putchar('2');
-	putchar('3');
-	write(1, ", ", 2);
-
-	putchar('2');
-	putchar('4');
-	write(1, ", ", 2);
-
-	putchar('2');
-	putchar('5');
-	write(1, ", ", 2);
-
-	putchar('2');
-	putchar('6');
-	write(1, ", ", 2);
-
-	putchar('2');
-	putchar('7');
-	write(1, ", ", 2);
-
-	putchar('2');
-	putchar('8');
-	write(1, ", ", 2);
-
-	putchar('2');
-	putchar('9');
-	write(1, ", ", 2);
-
-	putchar('3');
-	putchar('4');
-	write(1, ", ", 2);
-
-	putchar('3');
-	putchar('5');
-	write(1, ", ", 2);
-
-	putchar('3');
-	putchar('6');
-	write(1, ", ", 2);
-
-	putchar('3');
-	putchar('7');
-	write(1, ", ", 2);
-
-	putchar('3');
-	putchar('8');
-	write(1, ", ", 2);
-
-	putchar('3');
-	putchar('9');
-	write(1, ", ", 2);
-
-	putchar('4');
-	putchar('5');
-	write(1, ", ", 2);
-
-	putchar('4');
-	putchar('6');
-	write(1, ", ", 2);
-
-	putchar('4');
-	putchar('7');
-	write(1, ", ", 2);
-
-	putchar('4');
-	putchar('8');
-	write(1, ", ", 2);
-
-	putchar('4');
-	putchar('9');
-	write(1, ", ", 2);
-
-	putchar('5');
-	putchar('6');
-	write(1, ", ", 2);
-
-	putchar('5');
-	putchar('7
+	return (0);
+}
 
