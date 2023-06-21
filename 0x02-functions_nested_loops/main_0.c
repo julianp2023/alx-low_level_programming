@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
-int add(int a, int b);
+int add(int a, int b); // Function prototype for add
 
 /**
  * main - Entry point
