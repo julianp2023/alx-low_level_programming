@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-/* Function prototype */
-int _abs(int num);
+int _abs(int num);  // Function prototype
 
 int main() {
     int num = -5;
@@ -10,7 +9,6 @@ int main() {
     return 0;
 }
 
-/* Function definition */
 int _abs(int num) {
     if (num < 0)
         return -num;
