@@ -1,13 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 
-/* Function prototype for add */
 int add(int a, int b);
 
 /**
- * main - check the code
+ * main - Entry point
  *
- * Return: Always 0.
+ * Return: Always 0
  */
 int main(void)
 {
