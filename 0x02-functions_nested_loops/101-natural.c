@@ -4,7 +4,7 @@ int main()
 {
     int limit = 1024;
     int sum = 0;
-    int i; // Declare the variable outside the for loop
+    int i; /* Declare the variable outside the for loop */
     
     for (i = 1; i < limit; i++) {
         if (i % 3 == 0 || i % 5 == 0) {
