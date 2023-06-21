@@ -1,19 +1,13 @@
 #include "main.h"
-#include <stdio.h>
 
-int add(int a, int b); // Function prototype for add
-
-/**
- * main - Entry point
- *
- * Return: Always 0
- */
 int main(void)
 {
-    int n;
-
-    n = add(89, 9);
-    printf("%d\n", n);
+    print_times_table(2);
+    print_times_table(10);
+    print_times_table(13);
+    print_times_table(-2);
+    print_times_table(0);
+    print_times_table(100);
     return (0);
 }
 
