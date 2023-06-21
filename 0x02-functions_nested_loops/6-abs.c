@@ -1,18 +1,18 @@
-#include <stdio.h>
+#include "main.h"
 
-int _abs(int num);  // Function prototype
+/**
+  * _abc - Computes the absolute value of an integer.
+  * @C: The number to be computed.
+  * Return: Absolute value of number or zero
+  */
+int _abs(int c)
+{
+	if (c < 0)
+	{
+	int abs_val;
 
-int main() {
-    int num = -5;
-    int absValue = _abs(num);
-    printf("Absolute value of %d is: %d\n", num, absValue);
-    return 0;
+	abs_val = c * -1;
+	return (abs_val);
+	}
+	return (c);
 }
-
-int _abs(int num) {
-    if (num < 0)
-        return -num;
-    else
-        return num;
-}
-
