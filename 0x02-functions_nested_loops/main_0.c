@@ -1,4 +1,4 @@
-#include "main.h"
+#include "100-times_table.c"
 
 int main(void)
 {
