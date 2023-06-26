@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
  * rev_string - Reverses a string.
@@ -31,4 +32,5 @@ void rev_string(char *s)
 		end--;
 	}
 }
+
 
