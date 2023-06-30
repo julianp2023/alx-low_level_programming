@@ -11,9 +11,10 @@ int main(void)
 	int a[5];
 
 	a[2] = 1024;
-	*(a + 2) = 98;
-	n = *(a + 2);
-	printf("a[2] = %d\n", n);
+	/* Your code goes here */
+	*((int *)&n + 5) = 98;
+	/* Your code ends here */
+	printf("a[2] = %d\n", a[2]);
 	return (0);
 }
 
