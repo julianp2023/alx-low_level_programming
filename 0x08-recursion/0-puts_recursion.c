@@ -1,5 +1,4 @@
 #include "main.h"
-#include <unistd.h>
 
 /**
  * _putchar - Writes a character to the standard output (stdout)
@@ -26,5 +25,13 @@ void _puts_recursion(char *s)
 	}
 	_putchar(*s);
 	_puts_recursion(s + 1);
+}
+
+int main(void)
+{
+	_puts_recursion("First, solve the problem. Then, write the code");
+	_puts_recursion("Talk is cheap. Show me the code");
+	_puts_recursion("");
+	return (0);
 }
 
