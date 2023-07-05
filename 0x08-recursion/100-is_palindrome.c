@@ -11,6 +11,8 @@
  */
 int is_palindrome_recursive(char *s, int start, int end)
 {
+	char c1, c2;
+
 	if (start >= end)
 		return (1);
 
@@ -21,8 +23,8 @@ int is_palindrome_recursive(char *s, int start, int end)
 		end--;
 
 	/* Convert characters to lowercase for case-insensitive comparison */
-	char c1 = tolower(s[start]);
-	char c2 = tolower(s[end]);
+	c1 = tolower(s[start]);
+	c2 = tolower(s[end]);
 
 	if (c1 != c2)
 		return (0);
