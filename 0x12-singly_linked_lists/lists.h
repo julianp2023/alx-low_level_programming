@@ -1,9 +1,17 @@
 #ifndef LISTS_H
 #define LISTS_H
 
-#include <stdlib.h>
+#include <stddef.h>
 
-/* Structure for a linked list node */
+/**
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
+ * for ALX project
+ */
 typedef struct list_s
 {
     char *str;
@@ -11,11 +19,10 @@ typedef struct list_s
     struct list_s *next;
 } list_t;
 
-/* Function to print the elements of a linked list */
+/* Function prototypes */
 size_t print_list(const list_t *h);
-
-/* Function to return the number of elements in a linked list */
-size_t list_len(const list_t *h);
+list_t *add_node(list_t **head, const char *str);
+unsigned int _strlen(const char *str);
 
 #endif /* LISTS_H */
 
