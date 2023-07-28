@@ -1,1 +1,1 @@
-0x0A. C - argc, argv
+0x11. C - printf
