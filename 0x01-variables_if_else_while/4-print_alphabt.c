@@ -1,27 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 /**
- * main - Entry point
- *
- * Description: Prints the alphabet in lowercase, excluding 'q' and 'e',
- *              followed by a new line. Utilizes the putchar function for output.
+ * main - Prints the alphabet without q and e.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char letter;
+	int i;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	for (i = 97; i < 123; i++)
 	{
-		if (letter != 'q' && letter != 'e')
+		if (i != 101 && i != 113)
 		{
-			putchar(letter);
+			putchar(i);
 		}
 	}
-
 	putchar('\n');
-
 	return (0);
 }
 
