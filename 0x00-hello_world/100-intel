@@ -1,3 +1,26 @@
 #!/bin/bash
-gcc -S -masm=intel $CFILE
+
+# Check if the CFILE variable is set
+if [ -z "$CFILE" ]; then
+    echo "Error: CFILE variable is not set. Please set it to the name of the C file."
+    exit 1
+fi
+
+# Check if the C file exists
+if [ ! -f "$CFILE" ]; then
+    echo "Error: The C file $CFILE does not exist."
+    exit 1
+fi
+
+# Generate the assembly code using GCC with Intel syntax and output to a temporary file
+gcc -S -masm=intel "$CFILE" -o "${CFILE%.c}.s"
+
+# Check if the assembly file was generated successfully
+if [ $? -ne 0 ]; then
+    echo "Error: Failed to generate the assembly code."
+    exit 1
+fi
+
+# Print success message
+echo "Assembly code generated and saved as ${CFILE%.c}.s"
 
