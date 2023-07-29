@@ -1,6 +1,10 @@
 	.file	"main.c"
 	.intel_syntax noprefix
 	.text
+	.section	.rodata
+.LC0:
+	.string	"Hello, Assembly!"
+	.text
 	.globl	main
 	.type	main, @function
 main:
@@ -12,6 +16,8 @@ main:
 	.cfi_offset 6, -16
 	mov	rbp, rsp
 	.cfi_def_cfa_register 6
+	lea	rdi, .LC0[rip]
+	call	puts@PLT
 	mov	eax, 0
 	pop	rbp
 	.cfi_def_cfa 7, 8
